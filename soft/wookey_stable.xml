@@ -5,69 +5,69 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="private" path="." revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.0" />
 
     <!-- documentation -->
-    <project name="wookey-project/wookeypedia.git" remote="private" path="./doc" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.0" />
 
     <!-- kernel -->
-    <project name="wookey-project/ewok-kernel.git" remote="private" path="./kernel" revision="refs/tags/v0.9.5" />
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.5" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="private" path="./loader" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v0.8.0" />
 
     <!-- applications for firmware mode -->
-    <project name="wookey-project/app-wookey-crypto.git" remote="private" path="./apps/crypto" revision="refs/tags/v0.7.0" />
-    <project name="wookey-project/app-wookey-smart.git" remote="private" path="./apps/smart" revision="refs/tags/v0.7.0" />
-    <project name="wookey-project/app-wookey-usb.git" remote="private" path="./apps/usb" revision="refs/tags/v0.7.5" />
-    <project name="wookey-project/app-wookey-sdio.git" remote="private" path="./apps/sdio" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/app-wookey-crypto.git" remote="github" path="./apps/crypto" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/app-wookey-smart.git" remote="github" path="./apps/smart" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/app-wookey-usb.git" remote="github" path="./apps/usb" revision="refs/tags/v0.7.5" />
+    <project name="wookey-project/app-wookey-sdio.git" remote="github" path="./apps/sdio" revision="refs/tags/v0.7.0" />
     <!-- applications for dfu mode -->
-    <project name="wookey-project/app-dfu-smart.git" remote="private" path="./apps/dfusmart" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/app-dfu-usb.git" remote="private" path="./apps/dfuusb" revision="refs/tags/v0.8.5" />
-    <project name="wookey-project/app-dfu-cryp.git" remote="private" path="./apps/dfucrypto" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/app-wookey-flash.git" remote="private" path="./apps/dfuflash" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/app-dfu-smart.git" remote="github" path="./apps/dfusmart" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/app-dfu-usb.git" remote="github" path="./apps/dfuusb" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/app-dfu-cryp.git" remote="github" path="./apps/dfucrypto" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/app-wookey-flash.git" remote="github" path="./apps/dfuflash" revision="refs/tags/v0.7.0" />
     <!-- generic applications -->
-    <project name="wookey-project/app-wookey-pin.git" remote="private" path="./apps/pin" revision="refs/tags/v0.7.5" />
+    <project name="wookey-project/app-wookey-pin.git" remote="github" path="./apps/pin" revision="refs/tags/v0.7.5" />
 
     <!-- applications permission (ipc.config, dma_shm.config) -->
-    <project name="wookey-project/perms-matrix-wookey.git" remote="private" path="./apps" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/perms-matrix-wookey.git" remote="github" path="./apps" revision="refs/tags/v1.0.0" />
 
     <!-- javacard applet sources and build system -->
-    <project name="wookey-project/javacard-applet" remote="private" path="./javacard/applet" revision="refs/tags/v0.9.0">
+    <project name="wookey-project/javacard-applet" remote="github" path="./javacard/applet" revision="refs/tags/v0.9.0">
         <linkfile src="Makefile" dest="./javacard/Makefile"/>
         <linkfile src="Kconfig" dest="./javacard/Kconfig"/>
     </project>
     <!-- drivers -->
-    <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="private" path="./drivers/socs/stm32f439/cryp" revision="refs/tags/v1.0.0"/>
-    <project name="wookey-project/driver-stm32f4xx-sdio.git" remote="private" path="./drivers/socs/stm32f439/sdio" revision="refs/tags/v0.9.5" />
-    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="private" path="./drivers/socs/stm32f439/hash" revision="refs/tags/v0.6.0" />
-    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="private" path="./drivers/socs/stm32f439/iso7816" revision="refs/tags/v0.9.0" />
-    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="private" path="./drivers/socs/stm32f439/usart" revision="refs/tags/v0.7.0" />
-    <project name="wookey-project/driver-stm32f4xx-usb.git" remote="private" path="./drivers/socs/stm32f439/usb" revision="refs/tags/v0.5.0" />
-    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="private" path="./drivers/socs/stm32f439/spi" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="private" path="./drivers/socs/stm32f439/flash" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="github" path="./drivers/socs/stm32f439/cryp" revision="refs/tags/v1.0.0"/>
+    <project name="wookey-project/driver-stm32f4xx-sdio.git" remote="github" path="./drivers/socs/stm32f439/sdio" revision="refs/tags/v0.9.5" />
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f439/hash" revision="refs/tags/v0.6.0" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f439/iso7816" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f439/usart" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/driver-stm32f4xx-usb.git" remote="github" path="./drivers/socs/stm32f439/usb" revision="refs/tags/v0.5.0" />
+    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f439/spi" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f439/flash" revision="refs/tags/v0.8.0" />
 
-    <project name="wookey-project/driver-ili9341.git" remote="private" path="./drivers/boards/wookey/ili9341" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/driver-ad7843.git" remote="private" path="./drivers/boards/wookey/ad7843" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-ili9341.git" remote="github" path="./drivers/boards/wookey/ili9341" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-ad7843.git" remote="github" path="./drivers/boards/wookey/ad7843" revision="refs/tags/v0.8.0" />
 
 
     <!-- libs: required -->
-    <project name="wookey-project/libstd.git" remote="private" path="./libs/std" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="refs/tags/v0.8.5" />
     <!-- libs: others -->
-    <project name="wookey-project/libaes.git" remote="private" path="./libs/aes" revision="refs/tags/v0.8.5" />
-    <project name="wookey-project/libdes.git" remote="private" path="./libs/des" revision="refs/tags/v0.7.0" />
-    <project name="wookey-project/libconsole.git" remote="private" path="./libs/console" revision="refs/tags/v0.9.0" />
-    <project name="wookey-project/libhmac.git" remote="private" path="./libs/hmac" revision="refs/tags/v1.0.0" />
-    <project name="wookey-project/libsd.git" remote="private" path="./libs/sd" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/libmassstorage.git" remote="private" path="./libs/massstorage" revision="refs/tags/v0.8.5" />
-    <project name="wookey-project/libdfu.git" remote="private" path="./libs/dfu" revision="refs/tags/v1.0.0" />
-    <project name="wookey-project/libwookey.git" remote="private" path="./libs/wookey" revision="refs/tags/v0.9.0" />
-    <project name="wookey-project/libfw.git" remote="private" path="./libs/firmware" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/libgui.git" remote="private" path="./libs/gui" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/libaes.git" remote="github" path="./libs/aes" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/libdes.git" remote="github" path="./libs/des" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/libsd.git" remote="github" path="./libs/sd" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/libmassstorage.git" remote="github" path="./libs/massstorage" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/libdfu.git" remote="github" path="./libs/dfu" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/libwookey.git" remote="github" path="./libs/wookey" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/libfw.git" remote="github" path="./libs/firmware" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/libgui.git" remote="github" path="./libs/gui" revision="refs/tags/v0.8.0" />
     <!-- token related libs: -->
-    <project name="wookey-project/libtoken.git" remote="private" path="./libs/token" revision="refs/tags/v0.9.0" />
-    <project name="wookey-project/libsmartcard.git" remote="private" path="./libs/smartcard" revision="refs/tags/v0.7.0" />
-    <project name="wookey-project/libiso7816.git" remote="private" path="./libs/iso7816" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/libtoken.git" remote="github" path="./libs/token" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/libsmartcard.git" remote="github" path="./libs/smartcard" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/libiso7816.git" remote="github" path="./libs/iso7816" revision="refs/tags/v0.9.0" />
 
     <!-- externals -->
     <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
@@ -81,8 +81,8 @@
 
 
     <!-- board content -->
-    <project name="wookey-project/board-32f439wookey.git" remote="private" path="./configs/boards/wookey" revision="refs/tags/v0.9.5"/>
+    <project name="wookey-project/board-32f439wookey.git" remote="github" path="./configs/boards/wookey" revision="refs/tags/v0.9.5"/>
     <!-- layout content -->
-    <project name="wookey-project/layout-stm32f439.git" remote="private" path="./layouts/arch/socs/stm32f439" revision="refs/tags/v1.0.0"/>
+    <project name="wookey-project/layout-stm32f439.git" remote="github" path="./layouts/arch/socs/stm32f439" revision="refs/tags/v1.0.0"/>
 
 </manifest>
