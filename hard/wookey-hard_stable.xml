@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="https://github.com"/>
+
+    <project name="wookey-project/hard-libs.git" remote="github" path="libs" revision="refs/tags/v1.0.0" />
+
+    <project name="wookey-project/hard-tools.git" remote="github" path="tools" revision="refs/tags/v0.8.0" />
+
+    <project name="wookey-project/hard-wookey-motherboard.git" remote="github" path="boards/wookey/motherboard" revision="refs/tags/v1.6.0" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/motherboard/libs" revision="refs/tags/v1.0.0" />
+
+    <project name="wookey-project/hard-wookey-screen.git" remote="github" path="boards/wookey/screen" revision="refs/tags/v1.2.0" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/screen/libs" revision="refs/tags/v1.0.0" />
+
+    <project name="wookey-project/hard-wookey-jtag.git" remote="github" path="boards/wookey/jtag" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/jtag/libs" revision="refs/tags/v1.0.0" />
+</manifest>
+

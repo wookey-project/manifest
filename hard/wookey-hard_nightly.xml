@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="https://github.com"/>
+
+    <project name="wookey-project/hard-libs.git" remote="github" path="libs" revision="master" />
+
+    <project name="wookey-project/hard-tools.git" remote="github" path="tools" revision="master" />
+
+    <project name="wookey-project/hard-wookey-motherboard.git" remote="github" path="boards/wookey/motherboard" revision="master" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/motherboard/libs" revision="master" />
+
+    <project name="wookey-project/hard-wookey-screen.git" remote="github" path="boards/wookey/screen" revision="master" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/screen/libs" revision="master" />
+
+    <project name="wookey-project/hard-wookey-jtag.git" remote="github" path="boards/wookey/jtag" revision="master" />
+    <project name="wookey-project/hard-libs.git" remote="github" path="boards/wookey/jtag/libs" revision="master" />
+</manifest>
+
