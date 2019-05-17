@@ -14,7 +14,7 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.1" />
 
     <!-- documentation -->
     <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.0" />
