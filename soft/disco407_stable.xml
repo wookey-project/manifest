@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This is the disco407 benchmark profile. This profile hold all the benchmark applications
+  and associated libraries and drivers needed for it.
+  This profile permit to:
+    - generate some measurements for the various HW IP usage as a userspace driver (performance
+      measurement)
+    - generate some measurements and basic tests for the EwoK syscalls usage (performances,
+      basic behavior but *no* fuzzing)
+-->
+<manifest>
+    <!-- remote repository hosts list -->
+    <remote name="github" fetch="https://github.com"/>
+
+    <!-- various repositories -->
+    <!-- starting with SDK itself -->
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.0" />
+
+    <!-- documentation -->
+    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.0" />
+
+    <!-- kernel -->
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.5" />
+
+    <!-- bootloader -->
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v0.8.0" />
+
+    <!-- applications -->
+    <project name="wookey-project/app-sample-blinky.git" remote="github" path="./apps/blinky" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/app-sample-leds.git" remote="github" path="./apps/leds" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/app-sample-button.git" remote="github" path="./apps/button" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/app-bench-logger.git" remote="github" path="./apps/benchlog" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/app-bench-syscalls.git" remote="github" path="./apps/svctest" revision="refs/tags/v1.0.0" />
+
+    <!-- applications permission (ipc.config, dma_shm.config) for the above applications -->
+    <project name="wookey-project/perms-matrix-disco407-samples.git" remote="github" path="./apps" revision="refs/tags/v1.0.0" />
+
+    <!-- drivers -->
+    <project name="wookey-project/driver-stm32f4xx-hach.git" remote="github" path="./drivers/socs/stm32f407/hash" revision="refs/tags/v0.6.0" />
+    <project name="wookey-project/driver-stm32f4xx-smartcard.git" remote="github" path="./drivers/socs/stm32f407/iso7816" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f407/usart" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f407/spi" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f407/flash" revision="refs/tags/v0.8.0" />
+
+    <!-- libs: required -->
+    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="refs/tags/v0.8.5" />
+    <!-- libs: others -->
+    <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="refs/tags/v1.0.0" />
+
+    <!-- externals -->
+    <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
+
+    <!-- board content -->
+    <project name="wookey-project/board-32f407disco.git" remote="github" path="./configs/boards/32f407disco" revision="refs/tags/v1.0.0"/>
+    <!-- layout content -->
+    <project name="wookey-project/layout-stm32f407.git" remote="github" path="./layouts/arch/socs/stm32f407" revision="refs/tags/v1.0.0"/>
+
+</manifest>
