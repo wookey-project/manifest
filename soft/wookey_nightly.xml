@@ -40,8 +40,8 @@
     <!-- drivers -->
     <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="github" path="./drivers/socs/stm32f439/cryp" revision="master"/>
     <project name="wookey-project/driver-stm32f4xx-sdio.git" remote="github" path="./drivers/socs/stm32f439/sdio" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-hach.git" remote="github" path="./drivers/socs/stm32f439/hash" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-smartcard.git" remote="github" path="./drivers/socs/stm32f439/iso7816" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f439/hash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f439/iso7816" revision="master" />
     <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f439/usart" revision="master" />
     <project name="wookey-project/driver-stm32f4xx-usb.git" remote="github" path="./drivers/socs/stm32f439/usb" revision="master" />
     <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f439/spi" revision="master" />
