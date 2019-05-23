@@ -2,14 +2,15 @@ language: python
 python: 2.7
 os: linux
 dist:
-    - bionic
+    - xenial
 
 addons:
     apt:
         update: true
 
+# testing with jdk8, on xenial
 before_install:
-    - sudo apt install -y repo git make gcc-arm-none-eabi binutils-arm-none-eabi python-pip python3-pip python-pyscard python-crypto openjdk-11-jdk maven ant
+    - sudo apt install -y repo git make gcc-arm-none-eabi binutils-arm-none-eabi python-pip python3-pip python-pyscard python-crypto openjdk-8-jdk maven ant
 
 install:
     - pip install intelhex
