@@ -1,5 +1,6 @@
 # About the WooKey project manifests hierarchy
 
+
 The WooKey project hierarchy is separated into two main components:
 
    * Software components
