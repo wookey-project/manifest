@@ -18,8 +18,7 @@ install:
 
 script:
     - git config --global color.ui true
-    - repo init -u https://github.com/wookey-project/manifest.git -m disco407.xml
-    - repo sync
+    - mkdir build && repo init -u https://github.com/wookey-project/manifest.git -m disco407.xml && repo sync
 
 branches:
     only:
