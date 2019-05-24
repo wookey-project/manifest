@@ -1,3 +1,5 @@
+language: python
+python: 2.7
 os: linux
 dist:
     - xenial
@@ -12,7 +14,7 @@ before_install:
 
 # installing dependencies
 install:
-    - pip install intelhex
+    - sudo pip install intelhex
     - sudo pip3 install kconfiglib
     - curl -o /tmp/gnat-community-2018-20180524-arm-elf-linux64-bin http://mirrors.cdn.adacore.com/art/5b0c1227a3f5d7097625478d
     - chmod +x /tmp/gnat-community-2018-20180524-arm-elf-linux64-bin
@@ -21,6 +23,7 @@ install:
 
 # setting build dir and correct path for installed tools
 before_script:
+    - python --version
     - mkdir build && cd build
     - export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
 
