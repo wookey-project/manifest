@@ -14,7 +14,7 @@ before_install:
 
 # installing dependencies
 install:
-    - sudo pip install intelhex
+    - pip install --user intelhex
     - sudo pip3 install kconfiglib
     - curl -o /tmp/gnat-community-2018-20180524-arm-elf-linux64-bin http://mirrors.cdn.adacore.com/art/5b0c1227a3f5d7097625478d
     - chmod +x /tmp/gnat-community-2018-20180524-arm-elf-linux64-bin
