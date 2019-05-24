@@ -1,5 +1,7 @@
 # About the WooKey project manifests hierarchy
 
+[![Travis CI Build Status](https://api.travis-ci.com/wookey-project/manifest.svg?branch=master)](https://travis-ci.com/wookey-project/manifest)
+
 
 The WooKey project hierarchy is separated into two main components:
 
