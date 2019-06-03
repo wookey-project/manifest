@@ -5,16 +5,16 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.1" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.2" />
 
     <!-- documentation -->
     <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.0" />
 
     <!-- kernel -->
-    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.5" />
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.6" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v0.9.0" />
 
     <!-- applications for firmware mode -->
     <project name="wookey-project/app-wookey-crypto.git" remote="github" path="./apps/crypto" revision="refs/tags/v0.7.0" />
