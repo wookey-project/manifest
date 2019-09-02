@@ -59,7 +59,7 @@
     <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="refs/tags/v0.9.0" />
     <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="refs/tags/v1.0.0" />
     <project name="wookey-project/libsd.git" remote="github" path="./libs/sd" revision="refs/tags/v0.8.1" />
-    <project name="wookey-project/libmassstorage.git" remote="github" path="./libs/massstorage" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/libmassstorage.git" remote="github" path="./libs/massstorage" revision="refs/tags/v0.8.6" />
     <project name="wookey-project/libdfu.git" remote="github" path="./libs/dfu" revision="refs/tags/v1.0.0" />
     <project name="wookey-project/libwookey.git" remote="github" path="./libs/wookey" revision="refs/tags/v0.9.0" />
     <project name="wookey-project/libfw.git" remote="github" path="./libs/firmware" revision="refs/tags/v0.8.0" />
