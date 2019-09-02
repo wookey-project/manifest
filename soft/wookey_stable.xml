@@ -5,7 +5,7 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.3" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.4" />
 
     <!-- documentation -->
     <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.1" />
@@ -33,7 +33,7 @@
     <project name="wookey-project/perms-matrix-wookey.git" remote="github" path="./apps" revision="refs/tags/v1.0.0" />
 
     <!-- javacard applet sources and build system -->
-    <project name="wookey-project/javacard-applet" remote="github" path="./javacard/applet" revision="refs/tags/v0.9.2">
+    <project name="wookey-project/javacard-applet" remote="github" path="./javacard/applet" revision="refs/tags/v0.9.3">
         <linkfile src="Makefile" dest="./javacard/Makefile"/>
         <linkfile src="Kconfig" dest="./javacard/Kconfig"/>
     </project>
