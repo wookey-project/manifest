@@ -14,16 +14,16 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.2" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.7" />
 
     <!-- documentation -->
-    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.0" />
+    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.1" />
 
     <!-- kernel -->
-    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.6" />
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.9" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v0.9.0" />
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v1.0.2" />
 
     <!-- applications -->
     <project name="wookey-project/app-sample-blinky.git" remote="github" path="./apps/blinky" revision="refs/tags/v1.0.0" />
@@ -36,14 +36,14 @@
     <project name="wookey-project/perms-matrix-disco407-samples.git" remote="github" path="./apps" revision="refs/tags/v1.0.0" />
 
     <!-- drivers -->
-    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f407/hash" revision="refs/tags/v0.6.0" />
-    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f407/iso7816" revision="refs/tags/v0.9.0" />
-    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f407/usart" revision="refs/tags/v0.7.0" />
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f407/hash" revision="refs/tags/v0.6.1" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f407/iso7816" revision="refs/tags/v0.9.2" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f407/usart" revision="refs/tags/v0.7.1" />
     <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f407/spi" revision="refs/tags/v0.8.0" />
     <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f407/flash" revision="refs/tags/v0.8.0" />
 
     <!-- libs: required -->
-    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="refs/tags/v0.8.5" />
+    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="refs/tags/v0.9.0" />
     <!-- libs: others -->
     <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="refs/tags/v0.9.0" />
     <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="refs/tags/v1.0.0" />
