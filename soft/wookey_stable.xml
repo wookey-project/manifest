@@ -5,7 +5,7 @@
 
     <!-- various repositories -->
     <!-- starting with SDK itself -->
-    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.6" />
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="refs/tags/v1.0.7" />
 
     <!-- documentation -->
     <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="refs/tags/v1.0.1" />
@@ -14,7 +14,7 @@
     <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="refs/tags/v0.9.9" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v1.0.1" />
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="refs/tags/v1.0.2" />
 
     <!-- applications for firmware mode -->
     <project name="wookey-project/app-wookey-crypto.git" remote="github" path="./apps/crypto" revision="refs/tags/v0.7.1" />
@@ -27,7 +27,7 @@
     <project name="wookey-project/app-dfu-cryp.git" remote="github" path="./apps/dfucrypto" revision="refs/tags/v0.8.2" />
     <project name="wookey-project/app-wookey-flash.git" remote="github" path="./apps/dfuflash" revision="refs/tags/v0.7.0" />
     <!-- generic applications -->
-    <project name="wookey-project/app-wookey-pin.git" remote="github" path="./apps/pin" revision="refs/tags/v0.7.6" />
+    <project name="wookey-project/app-wookey-pin.git" remote="github" path="./apps/pin" revision="refs/tags/v0.7.7" />
 
     <!-- applications permission (ipc.config, dma_shm.config) -->
     <project name="wookey-project/perms-matrix-wookey.git" remote="github" path="./apps" revision="refs/tags/v1.0.1" />
@@ -48,7 +48,7 @@
     <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f439/flash" revision="refs/tags/v0.8.0" />
 
     <project name="wookey-project/driver-ili9341.git" remote="github" path="./drivers/boards/wookey/ili9341" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/driver-ad7843.git" remote="github" path="./drivers/boards/wookey/ad7843" revision="refs/tags/v0.8.0" />
+    <project name="wookey-project/driver-ad7843.git" remote="github" path="./drivers/boards/wookey/ad7843" revision="refs/tags/v0.8.1" />
 
 
     <!-- libs: required -->
@@ -63,7 +63,7 @@
     <project name="wookey-project/libdfu.git" remote="github" path="./libs/dfu" revision="refs/tags/v1.0.0" />
     <project name="wookey-project/libwookey.git" remote="github" path="./libs/wookey" revision="refs/tags/v0.9.1" />
     <project name="wookey-project/libfw.git" remote="github" path="./libs/firmware" revision="refs/tags/v0.8.0" />
-    <project name="wookey-project/libgui.git" remote="github" path="./libs/gui" revision="refs/tags/v0.8.1" />
+    <project name="wookey-project/libgui.git" remote="github" path="./libs/gui" revision="refs/tags/v0.8.2" />
     <!-- token related libs: -->
     <project name="wookey-project/libtoken.git" remote="github" path="./libs/token" revision="refs/tags/v0.9.1" />
     <project name="wookey-project/libsmartcard.git" remote="github" path="./libs/smartcard" revision="refs/tags/v0.7.1" />
