@@ -52,8 +52,8 @@
     <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
 
     <!-- board content -->
-    <project name="wookey-project/board-32f407disco.git" remote="github" path="./configs/boards/32f407disco" revision="refs/tags/v1.0.0"/>
+    <project name="wookey-project/board-32f407disco.git" remote="github" path="./configs/boards/32f407disco" revision="refs/tags/v1.0.1"/>
     <!-- layout content -->
-    <project name="wookey-project/layout-stm32f407.git" remote="github" path="./layouts/arch/socs/stm32f407" revision="refs/tags/v1.0.0"/>
+    <project name="wookey-project/layout-stm32f407.git" remote="github" path="./layouts/arch/socs/stm32f407" revision="refs/tags/v1.0.1"/>
 
 </manifest>
