@@ -34,8 +34,8 @@
 
     <!-- javacard applet sources and build system -->
     <project name="wookey-project/javacard-applet" remote="github" path="./javacard/applet" revision="master">
-        <linkfile src="Makefile" dest="./javacard/Makefile"/>
-        <linkfile src="Kconfig" dest="./javacard/Kconfig"/>
+        <linkfile src="Makefile" dest="javacard/Makefile"/>
+        <linkfile src="Kconfig" dest="javacard/Kconfig"/>
     </project>
     <!-- drivers -->
     <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="github" path="./drivers/socs/stm32f439/cryp" revision="master"/>
