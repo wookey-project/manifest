@@ -75,7 +75,7 @@
 	    <!-- by now, last stable release of GP.JAR is not compatible with all Javacard (not with static ones). This revision is.
 	         Here we keep that revision while the issue #165 is closed -->
     <project name="martinpaljak/GlobalPlatformPro" remote="github" path="./externals/globalplatformpro" revision="5fd24244c810d6f4aaf964c5b9702efcd6ac4c7c" />
-    <project name="martinpaljak/ant-javacard" remote="github" path="./externals/ant-javacard" revision="master" />
+    <project name="martinpaljak/ant-javacard" remote="github" path="./externals/ant-javacard" revision="19.05.08" />
     <project name="ANSSI-FR/SecAESSTM32" remote="github" path="./externals/secaesstm32" revision="master" />
 
 
