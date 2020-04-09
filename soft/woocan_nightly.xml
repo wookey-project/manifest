@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This is the disco407 benchmark profile. This profile hold all the benchmark applications
+  and associated libraries and drivers needed for it.
+  This profile permit to:
+    - generate some measurements for the various HW IP usage as a userspace driver (performance
+      measurement)
+    - generate some measurements and basic tests for the EwoK syscalls usage (performances,
+      basic behavior but *no* fuzzing)
+-->
+<manifest>
+    <!-- remote repository hosts list -->
+    <remote name="github" fetch="https://github.com"/>
+
+    <!-- various repositories -->
+    <!-- starting with SDK itself -->
+    <project name="wookey-project/tataouine.git" remote="github" path="." revision="master" />
+
+    <!-- documentation -->
+    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="master" />
+
+    <!-- kernel -->
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="master" />
+
+    <!-- bootloader -->
+    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="master" />
+
+    <!-- applications -->
+    <project name="wookey-project/app-woocan-canspy.git" remote="github" path="./apps/canspy" revision="master" />
+
+    <!-- applications permission (ipc.config, dma_shm.config) for the above applications -->
+    <project name="wookey-project/perms-matrix-woocan.git" remote="github" path="./apps" revision="master" />
+
+    <!-- drivers -->
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f407/hash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-can.git" remote="github" path="./drivers/socs/stm32f407/can" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f407/iso7816" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f407/usart" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f407/spi" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f407/flash" revision="master" />
+
+    <!-- libs: required -->
+    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="master" />
+    <!-- libs: others -->
+    <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="master" />
+    <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="master" />
+
+    <!-- externals -->
+    <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
+
+    <!-- board content -->
+    <project name="wookey-project/board-32f407disco.git" remote="github" path="./configs/boards/32f407disco" revision="master"/>
+    <!-- layout content -->
+    <project name="wookey-project/layout-stm32f407.git" remote="github" path="./layouts/arch/socs/stm32f407" revision="master"/>
+
+</manifest>
