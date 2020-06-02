@@ -14,7 +14,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: h2lab/runner-azure:latest
   steps:
-  - script: |
+  - bash: |
       source /etc/bash.bashrc
       mkdir build
       cd build
@@ -33,7 +33,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: h2lab/runner-azure:latest
   steps:
-  - script: |
+  - bash: |
       source /etc/bash.bashrc
       mkdir build
       cd build
@@ -52,7 +52,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: h2lab/runner-azure:latest
   steps:
-  - script: |
+  - bash: |
       source /etc/bash.bashrc
       mkdir build
       cd build
@@ -71,7 +71,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: h2lab/runner-azure:latest
   steps:
-  - script: |
+  - bash: |
       source /etc/bash.bashrc
       mkdir build
       cd build
@@ -90,7 +90,7 @@ jobs:
     vmImage: 'ubuntu-latest'
   container: h2lab/runner-azure:latest
   steps:
-  - script: |
+  - bash: |
       source /etc/bash.bashrc
       mkdir build
       cd build
