@@ -6,13 +6,13 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
-container: h2lab/runner-azure:latest
 
 jobs:
 - job: disco_blinky
+  displayName: "disco blinky"
+  pool:
+    vmImage: 'ubuntu-latest'
+  container: h2lab/runner-azure:latest
   steps:
   - script: |
       source /etc/bash.bashrc
@@ -26,7 +26,12 @@ jobs:
       source setenv.sh
       make 32f407discovery/proj_demo/basic_blinky_defconfig
       make
+
 - job: disco_blinky_ipc
+  displayName: "disco blinky ipc"
+  pool:
+    vmImage: 'ubuntu-latest'
+  container: h2lab/runner-azure:latest
   steps:
   - script: |
       source /etc/bash.bashrc
@@ -40,7 +45,12 @@ jobs:
       source setenv.sh
       make 32f407discovery/proj_demo/blinky_ipc_defconfig
       make
+
 - job: disco_logger
+  displayName: "disco logger"
+  pool:
+    vmImage: 'ubuntu-latest'
+  container: h2lab/runner-azure:latest
   steps:
   - script: |
       source /etc/bash.bashrc
@@ -54,7 +64,12 @@ jobs:
       source setenv.sh
       make 32f407discovery/proj_demo/logger_defconfig
       make
+
 - job: disco_syscalls
+  displayName: "disco syscalls"
+  pool:
+    vmImage: 'ubuntu-latest'
+  container: h2lab/runner-azure:latest
   steps:
   - script: |
       source /etc/bash.bashrc
@@ -68,7 +83,12 @@ jobs:
       source setenv.sh
       make 32f407discovery/proj_demo/syscalls_testsuite_defconfig
       make
+
 - job: wookey_graphic
+  displayName: "wookey graphic"
+  pool:
+    vmImage: 'ubuntu-latest'
+  container: h2lab/runner-azure:latest
   steps:
   - script: |
       source /etc/bash.bashrc
@@ -82,15 +102,4 @@ jobs:
       source setenv.sh
       make wookey/proj_wookey/wookey-v2/graphic_hs_defconfig
       make
-
-stages:
-- stage: compile_disco
-  jobs:
-    - job: disco_blinky
-    - job: disco_blinky_ipc
-    - job: disco_logger
-    - job: disco_syscalls
-- stage: compile_wookey
-  jobs:
-    - job: wookey_graphic
 
