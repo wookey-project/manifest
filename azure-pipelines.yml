@@ -7,190 +7,179 @@ trigger:
 - master
 
 
-jobs:
-- job: disco_blinky
-  displayName: "disco blinky"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make 32f407discovery/proj_demo/basic_blinky_defconfig
-      make
-
-- job: disco_blinky_ipc
-  displayName: "disco blinky ipc"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make 32f407discovery/proj_demo/blinky_ipc_defconfig
-      make
-
-- job: disco_logger
-  displayName: "disco logger"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make 32f407discovery/proj_demo/logger_defconfig
-      make
-
-- job: disco_syscalls
-  displayName: "disco syscalls"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make 32f407discovery/proj_demo/syscalls_testsuite_defconfig
-      make
-
-- job: wookey_graphic
-  displayName: "wookey graphic"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make wookey/proj_wookey/wookey-v2/graphic_hs_defconfig
-      make
-
-- job: wookey_mockup
-  displayName: "wookey mockup"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make wookey/proj_wookey/wookey-v2/mockup_hs_defconfig
-      make
-
-- job: wookey_prod
-  displayName: "wookey production"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make wookey/proj_wookey/wookey-v2/production_defconfig
-      make
-
-- job: wookey_dfu_graphic
-  displayName: "wookey dfu graphic"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make wookey/proj_wookey/wookey-v2/dfu/graphic_hs_defconfig
-      make
-
-- job: wookey_dfu_mockup
-  displayName: "wookey dfu mockup"
-  pool:
-    vmImage: 'ubuntu-latest'
-  container: h2lab/runner-azure:latest
-  steps:
-  - bash: |
-      source /etc/bash.bashrc
-      mkdir build
-      cd build
-      repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
-      repo sync
-      echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
-      echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
-      echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-      source setenv.sh
-      make wookey/proj_wookey/wookey-v2/dfu/mockup_hs_defconfig
-      make
-
 stages:
 - stage: Disco
   jobs:
   - job: disco_blinky
+    displayName: "disco blinky"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make 32f407discovery/proj_demo/basic_blinky_defconfig
+        make
+  
   - job: disco_blinky_ipc
+    displayName: "disco blinky ipc"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make 32f407discovery/proj_demo/blinky_ipc_defconfig
+        make
+  
   - job: disco_logger
+    displayName: "disco logger"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make 32f407discovery/proj_demo/logger_defconfig
+        make
+  
   - job: disco_syscalls
-
+    displayName: "disco syscalls"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make 32f407discovery/proj_demo/syscalls_testsuite_defconfig
+        make
+  
 - stage: Wookey
   jobs:
   - job: wookey_graphic
+    displayName: "wookey graphic"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_wookey/wookey-v2/graphic_hs_defconfig
+        make
+  
   - job: wookey_mockup
+    displayName: "wookey mockup"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_wookey/wookey-v2/mockup_hs_defconfig
+        make
+  
   - job: wookey_prod
+    displayName: "wookey production"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_wookey/wookey-v2/production_defconfig
+        make
+  
   - job: wookey_dfu_graphic
+    displayName: "wookey dfu graphic"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_wookey/wookey-v2/dfu/graphic_hs_defconfig
+        make
+  
   - job: wookey_dfu_mockup
+    displayName: "wookey dfu mockup"
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: h2lab/runner-azure:latest
+    steps:
+    - bash: |
+        source /etc/bash.bashrc
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_wookey/wookey-v2/dfu/mockup_hs_defconfig
+        make
+ 
