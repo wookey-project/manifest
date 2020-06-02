@@ -13,14 +13,14 @@ container: h2lab/runner-azure:latest
 
 steps:
 - script: |
+    source /etc/bash.bashrc
     mkdir build
     cd build
-    repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey-nightly.xml
+    repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
     repo sync
     echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
     echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
     echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
-    source /build/.bashrc
     source setenv.sh
     make wookey/proj_wookey/wookey-v2/graphic_hs_defconfig
   displayName: 'periodic nightly test'
