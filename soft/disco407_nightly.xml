@@ -52,8 +52,9 @@
     <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
 
     <!-- board content -->
-    <project name="wookey-project/board-32f407disco.git" remote="github" path="./configs/boards/32f407disco" revision="master"/>
+    <project name="wookey-project/tataouine-configs.git" remote="github" path="./configs" revision="master"/>
     <!-- layout content -->
-    <project name="wookey-project/layout-stm32f407.git" remote="github" path="./layouts/arch/socs/stm32f407" revision="master"/>
+    <project name="wookey-project/tataouine-layouts.git" remote="github" path="./layouts" revision="master"/>
+
 
 </manifest>
