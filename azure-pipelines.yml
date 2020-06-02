@@ -160,7 +160,7 @@ jobs:
       make wookey/proj_wookey/wookey-v2/dfu/graphic_hs_defconfig
       make
 
-  - job: wookey_dfu_mockup
+- job: wookey_dfu_mockup
   displayName: "wookey dfu mockup"
   pool:
     vmImage: 'ubuntu-latest'
