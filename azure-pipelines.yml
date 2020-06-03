@@ -21,7 +21,13 @@ stages:
     displayName: "disco blinky"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -40,7 +46,13 @@ stages:
     displayName: "disco blinky ipc"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -59,7 +71,13 @@ stages:
     displayName: "disco logger"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -78,7 +96,13 @@ stages:
     displayName: "disco syscalls"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -99,7 +123,13 @@ stages:
     displayName: "wookey graphic"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -118,7 +148,13 @@ stages:
     displayName: "wookey mockup"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -137,7 +173,13 @@ stages:
     displayName: "wookey production"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -156,7 +198,13 @@ stages:
     displayName: "wookey dfu graphic"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -175,7 +223,13 @@ stages:
     displayName: "wookey dfu mockup"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -196,7 +250,13 @@ stages:
     displayName: "AUTH applet"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -216,7 +276,13 @@ stages:
     displayName: "DFU applet"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
@@ -236,7 +302,13 @@ stages:
     displayName: "SIG applet"
     pool:
       vmImage: 'ubuntu-latest'
-    container: h2lab/runner-azure:latest
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
     steps:
     - bash: |
         source /etc/bash.bashrc
