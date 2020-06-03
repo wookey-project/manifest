@@ -254,8 +254,6 @@ stages:
       matrix:
         wookeyrunner_stable:
           containerImage: h2lab/runner-azure:latest
-        wookeyrunner_sid:
-          containerImage: h2lab/wookeyrunner-azure-sid:latest
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
@@ -280,8 +278,6 @@ stages:
       matrix:
         wookeyrunner_stable:
           containerImage: h2lab/runner-azure:latest
-        wookeyrunner_sid:
-          containerImage: h2lab/wookeyrunner-azure-sid:latest
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
@@ -306,8 +302,6 @@ stages:
       matrix:
         wookeyrunner_stable:
           containerImage: h2lab/runner-azure:latest
-        wookeyrunner_sid:
-          containerImage: h2lab/wookeyrunner-azure-sid:latest
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
