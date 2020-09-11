@@ -46,6 +46,7 @@
     <project name="wookey-project/driver-stm32f4xx-usb.git" remote="github" path="./drivers/socs/stm32f439/usb" revision="master" />
     <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f439/spi" revision="master" />
     <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f439/flash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usbotghs.git" remote="github" path="./drivers/socs/stm32f439/usbotghs" revision="master" />
 
     <project name="wookey-project/driver-ili9341.git" remote="github" path="./drivers/boards/wookey/ili9341" revision="master" />
     <project name="wookey-project/driver-ad7843.git" remote="github" path="./drivers/boards/wookey/ad7843" revision="master" />
@@ -64,6 +65,7 @@
     <project name="wookey-project/libwookey.git" remote="github" path="./libs/wookey" revision="master" />
     <project name="wookey-project/libfw.git" remote="github" path="./libs/firmware" revision="master" />
     <project name="wookey-project/libgui.git" remote="github" path="./libs/gui" revision="master" />
+    <project name="wookey-project/libxDCI.git" remote="github" path="./libs/usbctrl" revision="master" />
     <!-- token related libs: -->
     <project name="wookey-project/libtoken.git" remote="github" path="./libs/token" revision="master" />
     <project name="wookey-project/libsmartcard.git" remote="github" path="./libs/smartcard" revision="master" />
