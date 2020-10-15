@@ -30,7 +30,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -55,7 +55,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -80,7 +80,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -105,7 +105,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -132,7 +132,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -157,7 +157,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -183,7 +183,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -208,7 +208,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -233,7 +233,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -258,7 +258,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -282,7 +282,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -306,7 +306,7 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        source /etc/bash.bashrc
+        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
