@@ -17,44 +17,44 @@
     <project name="wookey-project/tataouine.git" remote="github" path="." revision="master" />
 
     <!-- documentation -->
-    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="master" />
+    <project name="wookey-project/wookeypedia.git" remote="github" path="doc" revision="master" />
 
     <!-- kernel -->
-    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="master" />
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="kernel" revision="master" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="master" />
+    <project name="wookey-project/bootloader.git" remote="github" path="loader" revision="master" />
 
     <!-- applications -->
-    <project name="wookey-project/app-sample-blinky.git" remote="github" path="./apps/blinky" revision="master" />
-    <project name="wookey-project/app-sample-leds.git" remote="github" path="./apps/leds" revision="master" />
-    <project name="wookey-project/app-sample-button.git" remote="github" path="./apps/button" revision="master" />
-    <project name="wookey-project/app-bench-logger.git" remote="github" path="./apps/benchlog" revision="master" />
-    <project name="wookey-project/app-bench-syscalls.git" remote="github" path="./apps/svctest" revision="master" />
+    <project name="wookey-project/app-sample-blinky.git" remote="github" path="apps/blinky" revision="master" />
+    <project name="wookey-project/app-sample-leds.git" remote="github" path="apps/leds" revision="master" />
+    <project name="wookey-project/app-sample-button.git" remote="github" path="apps/button" revision="master" />
+    <project name="wookey-project/app-bench-logger.git" remote="github" path="apps/benchlog" revision="master" />
+    <project name="wookey-project/app-bench-syscalls.git" remote="github" path="apps/svctest" revision="master" />
 
     <!-- applications permission (ipc.config, dma_shm.config) for the above applications -->
-    <project name="wookey-project/perms-matrix-disco407-samples.git" remote="github" path="./apps" revision="master" />
+    <project name="wookey-project/perms-matrix-disco407-samples.git" remote="github" path="apps" revision="master" />
 
     <!-- drivers -->
-    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f407/hash" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f407/iso7816" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f407/usart" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f407/spi" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f407/flash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="drivers/socs/stm32f407/hash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="drivers/socs/stm32f407/iso7816" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="drivers/socs/stm32f407/usart" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="drivers/socs/stm32f407/spi" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="drivers/socs/stm32f407/flash" revision="master" />
 
     <!-- libs: required -->
-    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="master" />
+    <project name="wookey-project/libstd.git" remote="github" path="libs/std" revision="master" />
     <!-- libs: others -->
-    <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="master" />
-    <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="master" />
+    <project name="wookey-project/libconsole.git" remote="github" path="libs/console" revision="master" />
+    <project name="wookey-project/libhmac.git" remote="github" path="libs/hmac" revision="master" />
 
     <!-- externals -->
-    <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
+    <project name="ANSSI-FR/libecc" remote="github" path="externals/libecc" revision="master" />
 
     <!-- board content -->
-    <project name="wookey-project/tataouine-configs.git" remote="github" path="./configs" revision="master"/>
+    <project name="wookey-project/tataouine-configs.git" remote="github" path="configs" revision="master"/>
     <!-- layout content -->
-    <project name="wookey-project/tataouine-layouts.git" remote="github" path="./layouts" revision="master"/>
+    <project name="wookey-project/tataouine-layouts.git" remote="github" path="layouts" revision="master"/>
 
 
 </manifest>

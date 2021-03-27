@@ -8,83 +8,83 @@
     <project name="wookey-project/tataouine.git" remote="github" path="." revision="master" />
 
     <!-- documentation -->
-    <project name="wookey-project/wookeypedia.git" remote="github" path="./doc" revision="master" />
+    <project name="wookey-project/wookeypedia.git" remote="github" path="doc" revision="master" />
 
     <!-- kernel -->
-    <project name="wookey-project/ewok-kernel.git" remote="github" path="./kernel" revision="master" />
+    <project name="wookey-project/ewok-kernel.git" remote="github" path="kernel" revision="master" />
 
     <!-- bootloader -->
-    <project name="wookey-project/bootloader.git" remote="github" path="./loader" revision="master" />
+    <project name="wookey-project/bootloader.git" remote="github" path="loader" revision="master" />
 
     <!-- applications for firmware mode -->
-    <project name="wookey-project/app-wookey-crypto.git" remote="github" path="./apps/crypto" revision="master" />
-    <project name="wookey-project/app-wookey-smart.git" remote="github" path="./apps/smart" revision="master" />
-    <project name="wookey-project/app-wookey-usb.git" remote="github" path="./apps/usb" revision="master" />
-    <project name="wookey-project/app-wookey-sdio.git" remote="github" path="./apps/sdio" revision="master" />
+    <project name="wookey-project/app-wookey-crypto.git" remote="github" path="apps/crypto" revision="master" />
+    <project name="wookey-project/app-wookey-smart.git" remote="github" path="apps/smart" revision="master" />
+    <project name="wookey-project/app-wookey-usb.git" remote="github" path="apps/usb" revision="master" />
+    <project name="wookey-project/app-wookey-sdio.git" remote="github" path="apps/sdio" revision="master" />
     <!-- applications for dfu mode -->
-    <project name="wookey-project/app-dfu-smart.git" remote="github" path="./apps/dfusmart" revision="master" />
-    <project name="wookey-project/app-dfu-usb.git" remote="github" path="./apps/dfuusb" revision="master" />
-    <project name="wookey-project/app-dfu-cryp.git" remote="github" path="./apps/dfucrypto" revision="master" />
-    <project name="wookey-project/app-wookey-flash.git" remote="github" path="./apps/dfuflash" revision="master" />
+    <project name="wookey-project/app-dfu-smart.git" remote="github" path="apps/dfusmart" revision="master" />
+    <project name="wookey-project/app-dfu-usb.git" remote="github" path="apps/dfuusb" revision="master" />
+    <project name="wookey-project/app-dfu-cryp.git" remote="github" path="apps/dfucrypto" revision="master" />
+    <project name="wookey-project/app-wookey-flash.git" remote="github" path="apps/dfuflash" revision="master" />
     <!-- generic applications -->
-    <project name="wookey-project/app-wookey-pin.git" remote="github" path="./apps/pin" revision="master" />
+    <project name="wookey-project/app-wookey-pin.git" remote="github" path="apps/pin" revision="master" />
 
     <!-- applications permission (ipc.config, dma_shm.config) -->
-    <project name="wookey-project/perms-matrix-wookey.git" remote="github" path="./apps" revision="master" />
+    <project name="wookey-project/perms-matrix-wookey.git" remote="github" path="apps" revision="master" />
 
     <!-- javacard applet sources and build system -->
-    <project name="wookey-project/javacard-applet" remote="github" path="./javacard/applet" revision="master">
+    <project name="wookey-project/javacard-applet" remote="github" path="javacard/applet" revision="master">
         <linkfile src="Makefile" dest="javacard/Makefile"/>
         <linkfile src="Kconfig" dest="javacard/Kconfig"/>
     </project>
     <!-- drivers -->
-    <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="github" path="./drivers/socs/stm32f439/cryp" revision="master"/>
-    <project name="wookey-project/driver-stm32f4xx-sdio.git" remote="github" path="./drivers/socs/stm32f439/sdio" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="./drivers/socs/stm32f439/hash" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="./drivers/socs/stm32f439/drviso7816" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="./drivers/socs/stm32f439/usart" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-usb.git" remote="github" path="./drivers/socs/stm32f439/usb" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="./drivers/socs/stm32f439/spi" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="./drivers/socs/stm32f439/flash" revision="master" />
-    <project name="wookey-project/driver-stm32f4xx-usbotghs.git" remote="github" path="./drivers/socs/stm32f439/usbotghs" revision="master" />
+    <project name="wookey-project/driver-stm32f4x9-cryp.git" remote="github" path="drivers/socs/stm32f439/cryp" revision="master"/>
+    <project name="wookey-project/driver-stm32f4xx-sdio.git" remote="github" path="drivers/socs/stm32f439/sdio" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-hash.git" remote="github" path="drivers/socs/stm32f439/hash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-iso7816.git" remote="github" path="drivers/socs/stm32f439/drviso7816" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usart.git" remote="github" path="drivers/socs/stm32f439/usart" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usb.git" remote="github" path="drivers/socs/stm32f439/usb" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-spi.git" remote="github" path="drivers/socs/stm32f439/spi" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-flash.git" remote="github" path="drivers/socs/stm32f439/flash" revision="master" />
+    <project name="wookey-project/driver-stm32f4xx-usbotghs.git" remote="github" path="drivers/socs/stm32f439/usbotghs" revision="master" />
 
-    <project name="wookey-project/driver-ili9341.git" remote="github" path="./drivers/boards/wookey/ili9341" revision="master" />
-    <project name="wookey-project/driver-ad7843.git" remote="github" path="./drivers/boards/wookey/ad7843" revision="master" />
+    <project name="wookey-project/driver-ili9341.git" remote="github" path="drivers/boards/wookey/ili9341" revision="master" />
+    <project name="wookey-project/driver-ad7843.git" remote="github" path="drivers/boards/wookey/ad7843" revision="master" />
 
 
     <!-- libs: required -->
-    <project name="wookey-project/libstd.git" remote="github" path="./libs/std" revision="master" />
+    <project name="wookey-project/libstd.git" remote="github" path="libs/std" revision="master" />
     <!-- libs: others -->
-    <project name="wookey-project/libaes.git" remote="github" path="./libs/aes" revision="master" />
-    <project name="wookey-project/libdes.git" remote="github" path="./libs/des" revision="master" />
-    <project name="wookey-project/libconsole.git" remote="github" path="./libs/console" revision="master" />
-    <project name="wookey-project/libhmac.git" remote="github" path="./libs/hmac" revision="master" />
-    <project name="wookey-project/libsd.git" remote="github" path="./libs/sd" revision="master" />
-    <project name="wookey-project/libmassstorage.git" remote="github" path="./libs/massstorage" revision="master" />
-    <project name="wookey-project/libdfu.git" remote="github" path="./libs/dfu" revision="master" />
-    <project name="wookey-project/libwookey.git" remote="github" path="./libs/wookey" revision="master" />
-    <project name="wookey-project/libfw.git" remote="github" path="./libs/firmware" revision="master" />
-    <project name="wookey-project/libgui.git" remote="github" path="./libs/gui" revision="master" />
-    <project name="wookey-project/libxDCI.git" remote="github" path="./libs/usbctrl" revision="master" />
+    <project name="wookey-project/libaes.git" remote="github" path="libs/aes" revision="master" />
+    <project name="wookey-project/libdes.git" remote="github" path="libs/des" revision="master" />
+    <project name="wookey-project/libconsole.git" remote="github" path="libs/console" revision="master" />
+    <project name="wookey-project/libhmac.git" remote="github" path="libs/hmac" revision="master" />
+    <project name="wookey-project/libsd.git" remote="github" path="libs/sd" revision="master" />
+    <project name="wookey-project/libmassstorage.git" remote="github" path="libs/massstorage" revision="master" />
+    <project name="wookey-project/libdfu.git" remote="github" path="libs/dfu" revision="master" />
+    <project name="wookey-project/libwookey.git" remote="github" path="libs/wookey" revision="master" />
+    <project name="wookey-project/libfw.git" remote="github" path="libs/firmware" revision="master" />
+    <project name="wookey-project/libgui.git" remote="github" path="libs/gui" revision="master" />
+    <project name="wookey-project/libxDCI.git" remote="github" path="libs/usbctrl" revision="master" />
     <!-- token related libs: -->
-    <project name="wookey-project/libtoken.git" remote="github" path="./libs/token" revision="master" />
-    <project name="wookey-project/libsmartcard.git" remote="github" path="./libs/smartcard" revision="master" />
-    <project name="wookey-project/libiso7816.git" remote="github" path="./libs/iso7816" revision="master" />
+    <project name="wookey-project/libtoken.git" remote="github" path="libs/token" revision="master" />
+    <project name="wookey-project/libsmartcard.git" remote="github" path="libs/smartcard" revision="master" />
+    <project name="wookey-project/libiso7816.git" remote="github" path="libs/iso7816" revision="master" />
 
     <!-- externals -->
-    <project name="ANSSI-FR/libecc" remote="github" path="./externals/libecc" revision="master" />
+    <project name="ANSSI-FR/libecc" remote="github" path="externals/libecc" revision="master" />
     <!--  gp.jar sources -->
 	    <!-- by now, last stable release of GP.JAR is not compatible with all Javacard (not with static ones). This revision is.
 	         Here we keep that revision while the issue #165 is closed -->
-    <project name="martinpaljak/GlobalPlatformPro" remote="github" path="./externals/globalplatformpro" revision="5fd24244c810d6f4aaf964c5b9702efcd6ac4c7c" />
-    <project name="martinpaljak/ant-javacard" remote="github" path="./externals/ant-javacard" revision="master" />
-    <project name="ANSSI-FR/SecAESSTM32" remote="github" path="./externals/secaesstm32" revision="master" />
+    <project name="martinpaljak/GlobalPlatformPro" remote="github" path="externals/globalplatformpro" revision="5fd24244c810d6f4aaf964c5b9702efcd6ac4c7c" />
+    <project name="martinpaljak/ant-javacard" remote="github" path="externals/ant-javacard" revision="master" />
+    <project name="ANSSI-FR/SecAESSTM32" remote="github" path="externals/secaesstm32" revision="master" />
 
 
 
     <!-- board content -->
-    <project name="wookey-project/tataouine-configs.git" remote="github" path="./configs" revision="master"/>
+    <project name="wookey-project/tataouine-configs.git" remote="github" path="configs" revision="master"/>
     <!-- layout content -->
-    <project name="wookey-project/tataouine-layouts.git" remote="github" path="./layouts" revision="master"/>
+    <project name="wookey-project/tataouine-layouts.git" remote="github" path="layouts" revision="master"/>
 
 </manifest>
