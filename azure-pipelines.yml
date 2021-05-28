@@ -271,7 +271,7 @@ stages:
         make wookey/proj_wookey/wookey-v2/dfu/mockup_hs_defconfig
         make
  
-- stage: Applets
+- stage: Wookey_Applets
   jobs:
   - job: applet_auth
     displayName: "AUTH applet"
@@ -356,4 +356,120 @@ stages:
         make wookey/proj_wookey/wookey-v2/graphic_hs_defconfig
         make genkeys
         make -C javacard applet_sig 
+
+- stage: U2F2
+  jobs:
+  - job: u2f2_graphic
+    displayName: "u2f2 graphic"
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      matrix:
+        wookeyrunner_sid:
+          containerImage: h2lab/wookeyrunner-azure-sid:latest
+    container: $[ variables['containerImage'] ]
+    steps:
+    - bash: |
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        ln -s /usr/bin/python3 ~/.bin/python
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/u2f2_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_u2f2/wookey-v2/graphic_hs_defconfig
+        make
+ 
+- stage: U2F2_Applets
+  jobs:
+  - job: applet_auth
+    displayName: "AUTH applet"
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+    container: $[ variables['containerImage'] ]
+    steps:
+    - bash: |
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        ln -s /usr/bin/python3 ~/.bin/python
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/u2f2_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_u2f2/wookey-v2/graphic_hs_defconfig
+        make genkeys
+        make -C javacard applet_auth 
+
+  - job: applet_dfu
+    displayName: "DFU applet"
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+    container: $[ variables['containerImage'] ]
+    steps:
+    - bash: |
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        ln -s /usr/bin/python3 ~/.bin/python
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/u2f2_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_u2f2/wookey-v2/graphic_hs_defconfig
+        make genkeys
+        make -C javacard applet_dfu 
+
+  - job: applet_sig
+    displayName: "SIG applet"
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      matrix:
+        wookeyrunner_stable:
+          containerImage: h2lab/runner-azure:latest
+    container: $[ variables['containerImage'] ]
+    steps:
+    - bash: |
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        ln -s /usr/bin/python3 ~/.bin/python
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir build
+        cd build
+        repo init -u https://github.com/wookey-project/manifest.git -m soft/u2f2_nightly.xml
+        repo sync
+        echo 'ADA_RUNTIME=/opt/adacore-arm-eabi' > setenv.local.sh
+        echo 'JAVA_SC_SDK=/opt/oracle_sdks/jc303_kit' >> setenv.local.sh
+        echo 'CROSS_COMPILE=arm-none-eabi-' >> setenv.local.sh
+        source setenv.sh
+        make wookey/proj_u2f2/wookey-v2/graphic_hs_defconfig
+        make genkeys
+        make -C javacard applet_sig 
+
 
