@@ -30,7 +30,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -55,7 +58,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -80,7 +86,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -105,7 +114,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/disco407_nightly.xml
@@ -132,7 +144,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -157,7 +172,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -183,7 +201,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -208,7 +229,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -233,7 +257,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -258,7 +285,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -282,7 +312,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
@@ -306,7 +339,10 @@ stages:
     container: $[ variables['containerImage'] ]
     steps:
     - bash: |
-        export PATH=/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
+        mkdir -p ~/.bin
+        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        chmod a+rx ~/.bin/repo
+        export PATH=${HOME}/.bin:/opt/adacore-arm-eabi/bin:/usr/local/bin:$PATH
         mkdir build
         cd build
         repo init -u https://github.com/wookey-project/manifest.git -m soft/wookey_nightly.xml
