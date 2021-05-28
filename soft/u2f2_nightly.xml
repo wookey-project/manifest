@@ -64,7 +64,7 @@
     <project name="wookey-project/libdes.git" remote="github" path="libs/des" revision="master" />
     <project name="wookey-project/libhmac.git" remote="github" path="libs/hmac" revision="master" />
     <project name="wookey-project/libsd.git" remote="github" path="libs/sd" revision="master" />
-    <project name="wookey-project/libusbctrl.git" remote="github" path="libs/usbctrl" revision="master" />
+    <project name="wookey-project/libxDCI.git" remote="github" path="libs/usbctrl" revision="master" />
     <project name="wookey-project/libdfu.git" remote="github" path="libs/dfu" revision="master" />
     <project name="wookey-project/libusbhid.git" remote="github" path="libs/usbhid" revision="master" />
     <project name="wookey-project/libfido.git" remote="github" path="libs/fido" revision="master" />
