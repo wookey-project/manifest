@@ -188,7 +188,6 @@ stages:
         source setenv.sh
         make wookey/proj_wookey/wookey-v2/mockup_hs_defconfig
         make
-        make sign tosign=flip:flop version="1.0.0-0"
   
   - job: wookey_prod
     displayName: "wookey production"
