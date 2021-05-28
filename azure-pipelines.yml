@@ -134,6 +134,7 @@ stages:
         make
   
 - stage: Wookey
+  dependsOn: Disco
   jobs:
   - job: wookey_graphic
     displayName: "wookey graphic"
@@ -271,6 +272,7 @@ stages:
         make
  
 - stage: Wookey_Applets
+  dependsOn: Wookey
   jobs:
   - job: applet_auth
     displayName: "AUTH applet"
@@ -357,6 +359,7 @@ stages:
         make -C javacard applet_sig 
 
 - stage: U2F2
+  dependsOn: Disco
   jobs:
   - job: u2f2_graphic
     displayName: "u2f2 graphic"
@@ -386,6 +389,7 @@ stages:
         make
  
 - stage: U2F2_Applets
+  dependsOn: U2F2
   jobs:
   - job: applet_auth
     displayName: "AUTH applet"
